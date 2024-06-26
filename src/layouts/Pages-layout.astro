@@ -1,0 +1,20 @@
+---
+import Layout from './Layout.astro';
+import Nav from '../components/Nav.astro';
+import Contact from '../components/Contact.astro';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+<Layout title={title} >
+	<Nav style="light" />
+	<main class="container mx-auto px-4 lg:px-16 py-32 flex flex-col items-center">
+		<div class="max-w-3xl text-neutral-950 text-lg">
+			<slot />
+		</div>
+	</main>
+	<Contact />
+</Layout>
