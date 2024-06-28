@@ -1,8 +1,51 @@
-<section class="bg-neutral-800 text-white">
+<section class="bg-neutral-950 text-white">
 	<div class="container mx-auto px-4 lg:px-16 py-32">
-		<div class="grid lg:grid-cols-2 gap-4">
+		<div class="grid lg:grid-cols-2 gap-24 lg:gap-32">
 			<div class="">
 				<h2 class="text-4xl lg:text-5xl tracking-tight font-semibold mt-6">Ponte en contacto</h2>
+				<p class="mt-8 text-lg font-light text-neutral-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias odit deleniti tempore eaque accusantium porro, et pariatur rem perferendis.</p>
+
+				<ul class="flex flex-col gap-4 mt-8 text-lg">
+					<li>
+						<a class="flex w-fit text-neutral-200 hover:text-emerald-400 duration-300 items-center gap-4" href="mailto:sabersupercomplejo@gmail.com" target="_blank" rel="noopener noreferrer">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+							<div>sabersupercomplejo@gmail.com</div>
+						</a>
+					</li>
+
+					<li>
+						<a class="flex w-fit text-neutral-200 hover:text-emerald-400 duration-300 items-center gap-4" href="https://www.instagram.com/comunidad.ssc" target="_blank" rel="noopener noreferrer">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+							<div>Comunidad.SCC</div>
+						</a>
+					</li>
+
+					<li>
+						<a class="flex w-fit text-neutral-200 hover:text-emerald-400 duration-300 items-center gap-4" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+							<div>Comunidad.SCC</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="flex flex-col gap-6">
+				<div>
+					<label for="name" class="block mb-2 text-sm font-medium text-white">Nombre</label>
+					<input type="text" id="name" class="border text-sm rounded-lg outline-none focus:ring-2 block w-full p-2.5 bg-neutral-900 border-neutral-700 placeholder-neutral-400 text-white focus:ring-emerald-500 focus:border-emerald-500" required />
+				</div>
+
+				<div>
+					<label for="email" class="block mb-2 text-sm font-medium text-white">Correo electrónico</label>
+					<input type="email" id="email" class="border text-sm rounded-lg outline-none focus:ring-2 block w-full p-2.5 bg-neutral-900 border-neutral-700 placeholder-neutral-400 text-white focus:ring-emerald-500 focus:border-emerald-500" required />
+				</div>
+
+				<div>
+					<label for="message" class="block mb-2 text-sm font-medium text-white">Mensaje</label>
+					<textarea id="message" rows="4" class="border text-sm rounded-lg outline-none focus:ring-2 block w-full p-2.5 bg-neutral-900 border-neutral-700 placeholder-neutral-400 text-white focus:ring-emerald-500 focus:border-emerald-500" required></textarea>
+				</div>
+
+				<button class="rounded bg-emerald-600 text-white px-6 font-medium py-2 block w-fit hover:bg-emerald-800 duration-300">Enviar mensaje</button>
 			</div>
 		</div>
 	</div>
