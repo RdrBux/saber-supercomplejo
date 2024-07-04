@@ -1,52 +1,107 @@
+---
+import Logo from '../assets/logo.svg'
+---
+
 <section class="bg-neutral-950 text-tertiary-50">
-	<div class="container mx-auto px-4 lg:px-16 py-32">
-		<div class="grid lg:grid-cols-2 gap-24 lg:gap-32">
-			<div class="">
-				<h2 class="text-4xl lg:text-5xl tracking-tight font-semibold mt-6">Ponte en contacto</h2>
-				<p class="mt-8 text-lg font-light text-neutral-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias odit deleniti tempore eaque accusantium porro, et pariatur rem perferendis.</p>
+	<div class="container mx-auto px-4 lg:px-16 py-16">
+		<div class="grid lg:grid-cols-3 border-2 border-neutral-900">
+			<div class="p-8 lg:border-r-2 border-neutral-900 flex flex-col justify-evenly">
+				<div class="font-semibold text-3xl">COMUNIDAD <br> DEL SABER <br> SUPERCOMPLEJO</div>
 
-				<ul class="flex flex-col gap-4 mt-8 text-lg">
+				<div class="hidden lg:flex gap-4 items-center">
+					<img class="w-12" src={Logo.src} alt="logo de la Comunidad del Saber Supercomplejo">
+					<div class="text-neutral-300">
+						<p>© 2024</p>
+						<p>Todos los derechos reservados</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="p-8 lg:px-12 flex flex-col gap-8 justify-evenly">
+				<ul class="grid grid-cols-2 gap-2">
+					<li><a class="hover:text-secondary-500 duration-300" href="/">Inicio</a></li>
+					<li><a class="hover:text-secondary-500 duration-300" href="/teoria">La teoría</a></li>
+					<li><a class="hover:text-secondary-500 duration-300" href="/actores">Los actores</a></li>
+					<li><a class="hover:text-secondary-500 duration-300" href="/camino">El camino</a></li>
+					<li><a class="hover:text-secondary-500 duration-300" href="/">Blog</a></li>
+				</ul>
+
+				<a class="hidden lg:block underline hover:text-secondary-500 duration-300" href="mailto:sabersupercomplejo@gmail.com">sabersupercomplejo@gmail.com</a>
+
+				<ul class="hidden lg:flex gap-2">
 					<li>
-						<a class="flex w-fit text-neutral-300 hover:text-primary-400 duration-300 items-center gap-4" href="mailto:sabersupercomplejo@gmail.com" target="_blank" rel="noopener noreferrer">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-							<div>sabersupercomplejo@gmail.com</div>
+						<a title="Instagram" class="border-2 border-neutral-900 p-2 grid place-content-center w-fit group" aria-label="Instagram" href="http://www.instagram.com/comunidad.ssc" target="_blank" rel="noopener noreferrer">
+							<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram group-hover:text-secondary-500 duration-300"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
 						</a>
 					</li>
 
 					<li>
-						<a class="flex w-fit text-neutral-300 hover:text-primary-400 duration-300 items-center gap-4" href="https://www.instagram.com/comunidad.ssc" target="_blank" rel="noopener noreferrer">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-							<div>Comunidad.SCC</div>
+						<a title="Facebook" class="border-2 border-neutral-900 p-2 grid place-content-center w-fit group" aria-label="Facebook" href="http://www.facebook.com/comunidad.ssc" target="_blank" rel="noopener noreferrer">
+							<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook group-hover:text-secondary-500 duration-300"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
 						</a>
 					</li>
 
 					<li>
-						<a class="flex w-fit text-neutral-300 hover:text-primary-400 duration-300 items-center gap-4" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-							<div>Comunidad.SCC</div>
+						<a title="LinkedIn" class="border-2 border-neutral-900 p-2 grid place-content-center w-fit group" aria-label="LinkedIn" href="http://www.linkedin.com/comunidad.ssc" target="_blank" rel="noopener noreferrer">
+							<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin group-hover:text-secondary-500 duration-300"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
 						</a>
 					</li>
 				</ul>
 			</div>
 
-			<div class="flex flex-col gap-6 max-w-lg">
-				<div>
-					<label for="name" class="block mb-2 text-sm font-medium">Nombre</label>
-					<input type="text" id="name" class="border text-sm rounded-lg outline-none focus:ring-2 block w-full p-2.5 bg-neutral-900 border-neutral-700 placeholder-neutral-400 focus:ring-primary-500 focus:border-primary-500" required />
-				</div>
+			<div class="p-8">
+				<h3 class="text-xl font-medium">ENVÍA UN MENSAJE</h3>
+				<form class="grid gap-4 mt-4">
+					<div class="relative">
+						<input type="text" id="name" class="block rounded-t px-2.5 pb-2.5 pt-5 w-full text-sm bg-neutral-500/5 border-0 border-b-2 appearance-none text-tertiary-50 border-neutral-700 focus:border-secondary-500 focus:outline-none focus:ring-0 peer" placeholder=" " />
+						<label for="name" class="absolute text-sm text-neutral-400 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] start-2.5 peer-focus:text-secondary-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Nombre completo</label>
+					</div>
 
-				<div>
-					<label for="email" class="block mb-2 text-sm font-medium">Correo electrónico</label>
-					<input type="email" id="email" class="border text-sm rounded-lg outline-none focus:ring-2 block w-full p-2.5 bg-neutral-900 border-neutral-700 placeholder-neutral-400 focus:ring-primary-500 focus:border-primary-500" required />
-				</div>
+					<div class="relative">
+						<input type="email" id="email" class="block rounded-t px-2.5 pb-2.5 pt-5 w-full text-sm bg-neutral-500/5 border-0 border-b-2 appearance-none text-tertiary-50 border-neutral-700 focus:border-secondary-500 focus:outline-none focus:ring-0 peer" placeholder=" " />
+						<label for="email" class="absolute text-sm text-neutral-400 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] start-2.5 peer-focus:text-secondary-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Correo electrónico</label>
+					</div>
 
-				<div>
-					<label for="message" class="block mb-2 text-sm font-medium">Mensaje</label>
-					<textarea id="message" rows="4" class="border text-sm rounded-lg outline-none focus:ring-2 block w-full p-2.5 bg-neutral-900 border-neutral-700 placeholder-neutral-400 focus:ring-primary-500 focus:border-primary-500" required></textarea>
-				</div>
+					<div class="relative">
+						<textarea id="message" class="block rounded-t px-2.5 pb-2.5 pt-5 w-full text-sm bg-neutral-500/5 border-0 border-b-2 appearance-none text-tertiary-50 border-neutral-700 focus:border-secondary-500 focus:outline-none focus:ring-0 peer" placeholder="" ></textarea>
+						<label for="message" class="absolute text-sm text-neutral-400 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] start-2.5 peer-focus:text-secondary-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Mensaje</label>
+					</div>
 
-				<button class="rounded bg-secondary-600 px-6 font-medium py-2 block w-full hover:bg-secondary-800 duration-300">Enviar mensaje</button>
+					<button class="whitespace-nowrap bg-secondary-400 text-neutral-950 px-6 font-medium py-2 w-full hover:bg-secondary-300 duration-300">Enviar</button>
+				</form>
+
+				<a class="block lg:hidden underline mt-16 mb-4 hover:text-secondary-500 duration-300" href="mailto:sabersupercomplejo@gmail.com">sabersupercomplejo@gmail.com</a>
+
+					<ul class="flex lg:hidden gap-2">
+						<li>
+							<a title="Instagram" class="border-2 border-neutral-900 p-2 grid place-content-center w-fit group" aria-label="Instagram" href="http://www.instagram.com/comunidad.ssc" target="_blank" rel="noopener noreferrer">
+								<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram group-hover:text-secondary-500 duration-300"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+							</a>
+						</li>
+
+						<li>
+							<a title="Facebook" class="border-2 border-neutral-900 p-2 grid place-content-center w-fit group" aria-label="Facebook" href="http://www.facebook.com/comunidad.ssc" target="_blank" rel="noopener noreferrer">
+								<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook group-hover:text-secondary-500 duration-300"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+							</a>
+						</li>
+
+						<li>
+							<a title="LinkedIn" class="border-2 border-neutral-900 p-2 grid place-content-center w-fit group" aria-label="LinkedIn" href="http://www.linkedin.com/comunidad.ssc" target="_blank" rel="noopener noreferrer">
+								<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin group-hover:text-secondary-500 duration-300"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+							</a>
+						</li>
+					</ul>
+
+					<div class="flex lg:hidden mt-16 gap-4 items-center">
+						<img class="w-12" src={Logo.src} alt="logo de la Comunidad del Saber Supercomplejo">
+						<div class="text-neutral-300">
+							<p>© 2024</p>
+							<p>Todos los derechos reservados</p>
+						</div>
+					</div>
 			</div>
+
+
 		</div>
 	</div>
 </section>
