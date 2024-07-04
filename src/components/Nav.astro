@@ -1,4 +1,6 @@
 ---
+import Logo from '../assets/logo.svg'
+import NavLink from './NavLink.astro';
 interface Props {
 	style: 'dark' | 'light';
 }
@@ -6,17 +8,18 @@ interface Props {
 const { style } = Astro.props;
 ---
 
-<nav class={`${style === 'dark' ? 'border-white/20 text-neutral-950' : 'border-black/20 text-white'} container mx-auto px-4 lg:px-16 flex items-center justify-between absolute top-0 left-0 right-0 p-4 border-b`}>
-	<a href="/">
-		<div class={`${style === 'dark' ? 'bg-white/20' : 'bg-black/20'} rounded-full w-10 aspect-square`}></div>
+<nav class={`${style === 'dark' ? 'border-neutral-950/40 text-neutral-950' : 'border-neutral-950/40 text-[#FBF4E6]'} container mx-auto px-4 lg:px-16 flex items-center justify-between absolute z-20 top-0 left-0 right-0 py-3 border-b`}>
+	<a aria-label="Inicio" href="/">
+		<div class={`${style === 'dark' ? 'bg-neutral-950/40' : 'bg-transparent'} p-1 rounded-full w-12 aspect-square grid place-content-center`}>
+			<img class="w-full" src={Logo.src} alt="">
+		</div>
 	</a>
 
-	<ul class={`${style === 'dark' ? 'text-neutral-300' : 'text-neutral-500'} hidden lg:flex gap-2 text-lg font-medium`}>
-		<li><a class={`${style === 'dark' ? 'hover:text-neutral-100' : 'hover:text-neutral-800'} px-6 py-3 duration-300`} href="/teoria">La teoría</a></li>
-		<li><a class={`${style === 'dark' ? 'hover:text-neutral-100' : 'hover:text-neutral-800'} px-6 py-3 duration-300`} href="/actores">Los actores</a></li>
-		<li><a class={`${style === 'dark' ? 'hover:text-neutral-100' : 'hover:text-neutral-800'} px-6 py-3 duration-300`} href="/camino">El camino</a></li>
-
+	<ul class={`${style === 'dark' ? 'text-tertiary-50' : 'text-neutral-500'} hidden lg:flex gap-2 font-medium`}>
+		<li><NavLink href='/teoria' text='La teoría' style={style} /></li>
+		<li><NavLink href='/actores' text='Los actores' style={style} /></li>
+		<li><NavLink href='/camino' text='El camino' style={style} /></li>
 	</ul>
 
-	<button class={`${style === 'dark' ? 'border-white/20 text-neutral-300' : 'border-black/20 text-neutral-500'} p-2 border rounded-md`}>ES / EN</button>
+	<button class={`${style === 'dark' ? 'border-black/30 text-tertiary-50' : 'border-black/20 text-neutral-500'} py-2 px-4 bg-neutral-950/40  rounded-full`}>ES / EN</button>
 </nav>
