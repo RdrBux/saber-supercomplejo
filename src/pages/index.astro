@@ -1,98 +1,23 @@
 ---
-import Contact from '../components/Contact.astro';
-import Nav from '../components/Nav.astro';
 import Layout from '../layouts/Layout.astro';
-import Cubes from '../assets/cubes.png';
+import Nav from '../components/Nav.astro';
+import Hero from '../components/home/Hero.astro';
+import Theory from '../components/home/Theory.astro';
+import Community from '../components/home/Community.astro';
+import Pathway from '../components/home/Pathway.astro';
+import Contact from '../components/Contact.astro';
 ---
 
 <Layout title='Saber Supercomplejo'>
 	<Nav style="dark" />
 	<main class="min-h-screen text-tertiary-50">
-		<section class="bg-primary-950">
-			<div class="container grid lg:grid-cols-2 items-center mx-auto px-4 lg:px-16 py-32">
-				<div>
-					<h1 class="text-[11vw] lg:text-[5rem] tracking-tighter font-semibold leading-[0.9] uppercase">
-						Comunidad <br> del Saber <br> Supercomplejo
-					</h1>
-					<p class="max-w-xl text-neutral-300 text-xl mt-8 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ex tempora odit provident, dignissimos maiores alias neque quidem fugit. Corporis nulla sint sequi qui tenetur ab officiis, eaque unde voluptate.</p>
-				</div>
-				<!-- <img class="w-[400px] ml-auto" src={Cubes.src} alt="cubes"> -->
-			</div>
-			</section>
+		<Hero />
 
+		<Theory />
 
-		<section class="bg-neutral-900 relative">
-			<div aria-hidden="true" class="absolute pointer-events-none top-0 right-2 -translate-y-1/2 flex gap-2">
-				<div class="w-1 h-8 bg-secondary-600 -skew-x-12"></div>
-				<div class="w-1 h-8 bg-secondary-600 -skew-x-12"></div>
-				<div class="w-1 h-8 bg-secondary-600 -skew-x-12"></div>
-				<div class="w-1 h-8 bg-secondary-600 -skew-x-12"></div>
-				<div class="w-1 h-8 bg-secondary-600 -skew-x-12"></div>
-				<div class="w-1 h-8 bg-secondary-600 -skew-x-12"></div>
-				<div class="w-1 h-8 bg-secondary-600 -skew-x-12"></div>
-				<div class="w-1 h-8 bg-secondary-600 -skew-x-12"></div>
-				<div class="w-1 h-8 bg-secondary-600 -skew-x-12"></div>
-				<div class="w-1 h-8 bg-secondary-600 -skew-x-12"></div>
-				<div class="w-1 h-8 bg-secondary-600 -skew-x-12"></div>
-				<div class="w-1 h-8 bg-secondary-600 -skew-x-12"></div>
-				<div class="w-1 h-8 bg-secondary-600 -skew-x-12"></div>
-				<div class="w-1 h-8 bg-secondary-600 -skew-x-12"></div>
-				<div class="w-1 h-8 bg-secondary-600 -skew-x-12"></div>
-				<div class="w-1 h-8 bg-secondary-600 -skew-x-12"></div>
-				<div class="w-1 h-8 bg-secondary-600 -skew-x-12"></div>
-				<div class="w-1 h-8 bg-secondary-600 -skew-x-12"></div>
-				<div class="w-1 h-8 bg-secondary-600 -skew-x-12"></div>
-				<div class="w-1 h-8 bg-secondary-600 -skew-x-12"></div>
-				<div class="w-1 h-8 bg-secondary-600 -skew-x-12"></div>
-				<div class="w-1 h-8 bg-secondary-600 -skew-x-12"></div>
-				<div class="w-1 h-8 bg-secondary-600 -skew-x-12"></div>
-				<div class="w-1 h-8 bg-secondary-600 -skew-x-12"></div>
-			</div>
-			<div class="container mx-auto px-4 lg:px-16 py-32">
-				<div class="grid lg:grid-cols-2 gap-4">
-					<div>
-						<h2 class="font-medium">LA TEORÍA</h2>
-						<h3 class="text-4xl lg:text-5xl tracking-tight font-semibold mt-6">¿Qué es el Saber Supercomplejo?</h3>
-						<p class="mt-8 text-lg font-light text-neutral-300">Se trata de una propuesta paradigmática integradora y superadora del Pensamiento Complejo y de las Ciencias de la Complejidad, redefiniendo su objeto de estudio, es decir, los sistemas complejos, en la interrelación de sus componentes fundamentales: los flujos de energía, las morfologías estructurales y la conectividad temporal. </p>
-						<p class="mt-4 text-lg font-light text-neutral-300">El SSC propone una reconfiguración de suprasistemas (micropartículas, macroscópico y biológico) que se superponen y articulan desde la supercomplejidad del universo y de la vida. También postula una metodología de descripción, predicción e intervención que construye y vincula mapas y algoritmos como herramientas para descubrir, entender y manipular las dinámicas y estructuras de sistemas complejos.</p>
-						<a href="/teoria" class="whitespace-nowrap bg-secondary-400 text-neutral-950 text-lg px-6 font-medium py-2 mt-8 block w-fit">Leer la teoría</a>
-					</div>
+		<Community />
 
-					<div class=""></div>
-				</div>
-			</div>
-		</section>
-
-		<section class="bg-neutral-800">
-			<div class="container mx-auto px-4 lg:px-16 py-32">
-				<div class="grid lg:grid-cols-2 gap-0">
-					<div>
-						<h2 class="font-medium">LOS ACTORES</h2>
-						<h3 class="text-4xl lg:text-5xl tracking-tight font-semibold mt-6">¿Qué es la Comunidad del SSC, qué objetivos tiene y qué beneficios tienen sus miembros? </h3>
-						<p class="mt-8 text-lg font-light text-neutral-300">La Comunidad del Saber Supercomplejo es un equipo de investigación y desarrollo cuyo objetivo es instalar este paradigma como alternativo e integrador, generando comprensiones integrales y multidimensionales de la realidad y estrategias de intervención superadoras de problemáticas sociales y planetarias emergentes.</p>
-						<p class="mt-4 text-lg font-light text-neutral-300">Su Programa de Intervención y Desarrollo está pensado para atender demandas de crecimiento y potenciación de administraciones de gobierno, empresas e instituciones interesadas en mejorar el cumplimiento de sus funciones y objetivos.</p>
-						<a href="/actores" class="bg-secondary-400 text-black text-lg px-6 font-medium py-2 mt-8 block w-fit">Leer sobre la comunidad</a>
-					</div>
-
-					<div class=""></div>
-				</div>
-			</div>
-		</section>
-
-		<section class="bg-neutral-900">
-			<div class="container mx-auto px-4 lg:px-16 py-32">
-				<div class="grid lg:grid-cols-2 gap-4">
-					<div>
-						<h2 class="font-medium">EL CAMINO</h2>
-						<h3 class="text-4xl lg:text-5xl tracking-tight font-semibold mt-6">¿Qué acciones permiten que nuestros proyectos, nuestra comunidad y sus miembros crezcan?</h3>
-						<p class="mt-8 text-lg font-light text-neutral-300">Se trata de construir escenarios concretos de crecimiento de la teoría y de las propuestas de intervención desde este nuevo paradigma. Un futuro mejor es posible y el Saber Supercomplejo quiere estar presente en el desarrollo de comprensiones y alternativas de acción para potencial el desarrollo institucional, personal y profesional y, con ello, brindar propuestas concretas para las grandes problemáticas sociales y planetarias.</p>
-						<a href="/camino" class="bg-secondary-400 text-black text-lg px-6 font-medium py-2 mt-8 block w-fit">Leer sobre el camino</a>
-					</div>
-
-					<div class=""></div>
-				</div>
-			</div>
-		</section>
+		<Pathway />
 	</main>
 
 	<Contact />
