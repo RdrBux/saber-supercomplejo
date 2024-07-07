@@ -10,7 +10,7 @@ const { style } = Astro.props;
 
 <nav class={`${style === 'dark' ? 'border-b-2 border-neutral-950/30 text-neutral-950' : 'border-b border-neutral-300'} container mx-auto px-4 lg:px-16 flex items-center justify-between absolute z-20 top-0 left-0 right-0 py-3`}>
 	<a aria-label="Inicio" href="/">
-		<div class={`${style === 'dark' ? 'bg-neutral-950/30' : 'bg-neutral-700'} p-[5px] rounded-full w-12 aspect-square grid place-content-center`}>
+		<div class={`${style === 'dark' ? 'bg-neutral-950/30' : 'bg-neutral-600'} p-[5px] rounded-full w-12 aspect-square grid place-content-center`}>
 			<img class="w-full" src={Logo.src} alt="">
 		</div>
 	</a>
@@ -21,5 +21,5 @@ const { style } = Astro.props;
 		<li><NavLink href='/camino' text='El camino' style={style} /></li>
 	</ul>
 
-	<button class={`${style === 'dark' ? 'bg-neutral-950/30' : 'bg-neutral-700'} py-2 px-4 text-tertiary-50  rounded-full`}>ES / EN</button>
+	<button class={`${style === 'dark' ? 'bg-neutral-950/30' : 'bg-neutral-600'} py-2 px-4 text-tertiary-50  rounded-full`}>ES / EN</button>
 </nav>
