@@ -1,5 +1,9 @@
 <div class="relative">
-	<div class="absolute right-[17%] animate-ping bottom-[10%] w-[20%] aspect-square bg-neutral-500 rounded-full"></div>
+	<div class="ping-1 | absolute right-[16%] bottom-[9%] w-[22%] aspect-square bg-neutral-500/50 rounded-full"></div>
+	<div class="ping-2 | absolute left-[11%] bottom-[43%] w-[14%] aspect-square bg-neutral-500/50 rounded-full"></div>
+	<div class="ping-3 | absolute right-[39.2%] top-[24%] w-[11%] aspect-square bg-neutral-500/50 rounded-full"></div>
+	<div class="ping-4 | absolute right-[10%] top-[9%] w-[9%] aspect-square bg-neutral-500/50 rounded-full"></div>
+	<div class="ping-4 | absolute left-[17.8%] top-[7%] w-[9%] aspect-square bg-neutral-500/50 rounded-full"></div>
 
 	<svg class="relative z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 553.11 532.84">
 		<polygon points="509.36 35.61 509.36 53.28 525.8 61.91 525.8 44.24 509.36 35.61" fill="#2c302e"/>
@@ -141,3 +145,76 @@
 		<polygon points="352.52 290.08 402.22 316.08 451.93 290.08 402.22 264.08 352.52 290.08" fill="#6f7271"/>
 	</svg>
 </div>
+
+<style>
+	.ping-1 {
+		animation: ping-1 4s cubic-bezier(0, 0, 0.2, 1) infinite;
+	}
+
+	.ping-2 {
+		animation: ping-2 4s cubic-bezier(0, 0, 0.2, 1) infinite;
+	}
+
+	.ping-3 {
+		animation: ping-3 4s cubic-bezier(0, 0, 0.2, 1) infinite;
+	}
+
+	.ping-4 {
+		animation: ping-4 4s cubic-bezier(0, 0, 0.2, 1) infinite;
+	}
+
+	@keyframes ping-1 {
+		0% {
+			opacity: 1;
+		}
+		15% {
+			transform: scale(2);
+			opacity: 0;
+  	}
+		100% {
+			opacity: 0;
+		}
+	}
+
+	@keyframes ping-2 {
+		0%, 25% {
+			opacity: 1;
+			transform: scale(1);
+		}
+		40% {
+			transform: scale(2);
+			opacity: 0;
+  	}
+		100% {
+			opacity: 0;
+		}
+	}
+
+	@keyframes ping-3 {
+		0%, 50% {
+			opacity: 1;
+			transform: scale(1);
+		}
+		65% {
+			transform: scale(2);
+			opacity: 0;
+  	}
+		100% {
+			opacity: 0;
+		}
+	}
+
+	@keyframes ping-4 {
+		0%, 75% {
+			opacity: 1;
+			transform: scale(1);
+		}
+		90% {
+			transform: scale(2);
+			opacity: 0;
+  	}
+		100% {
+			opacity: 0;
+		}
+	}
+</style>
