@@ -1,5 +1,6 @@
 ---
 import Logo from '../assets/logo.svg'
+import HamburgerMenu from './HamburgerMenu.astro';
 import NavLink from './NavLink.astro';
 interface Props {
 	style: 'dark' | 'light';
@@ -21,5 +22,7 @@ const { style } = Astro.props;
 		<li><NavLink href='/camino' text='El camino' style={style} /></li>
 	</ul>
 
-	<button class={`${style === 'dark' ? 'bg-neutral-950/30' : 'bg-neutral-600'} py-2 px-4 text-tertiary-50  rounded-full`}>ES / EN</button>
+	<button class={`${style === 'dark' ? 'bg-neutral-950/30' : 'bg-neutral-600'} hidden lg:block py-2 px-4 text-tertiary-50  rounded-full`}>ES / EN</button>
+
+	<HamburgerMenu style={style} />
 </nav>
