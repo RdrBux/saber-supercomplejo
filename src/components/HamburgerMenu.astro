@@ -14,7 +14,7 @@ const { style } = Astro.props;
 		Menú
 	</button>
 
-	<div class="mobile-menu closed | fixed inset-0 w-screen h-screen bg-emerald-900 text-tertiary-50">
+	<div class="mobile-menu closed | fixed inset-0 w-screen h-screen bg-primary-900/90 backdrop-blur text-tertiary-50">
 		<div class="container mx-auto py-3 flex flex-col h-full">
 
 			<div class="flex items-center justify-between border-b px-4 pb-3 border-neutral-950/30">
@@ -28,14 +28,11 @@ const { style } = Astro.props;
 				</button>
 			</div>
 
-
-			<ul class="mt-40 flex flex-col gap-6 px-4 text-4xl font-semibold tracking-tight">
+			<ul class="flex flex-col gap-0 text-[10vw] px-8 py-40 font-semibold tracking-tight">
 				<li><a class="nav-link | flex items-center gap-4" href="/teoria"><div aria-hidden="true" class="w-3 aspect-square rotate-45 bg-secondary-500"></div> LA TEORÍA</a></li>
 				<li><a class="nav-link | flex items-center gap-4" href="/actores"><div aria-hidden="true" class="w-3 aspect-square rotate-45 bg-secondary-500"></div> LOS ACTORES</a></li>
 				<li><a class="nav-link | flex items-center gap-4" href="/camino"><div aria-hidden="true" class="w-3 aspect-square rotate-45 bg-secondary-500"></div> EL CAMINO</a></li>
-
 			</ul>
-			<div class=""></div>
 		</div>
 	</div>
 </div>
