@@ -1,4 +1,3 @@
-import plugin from 'tailwindcss';
 import defaultTheme from 'tailwindcss/defaultTheme'
 
 /** @type {import('tailwindcss').Config} */
