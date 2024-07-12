@@ -15,13 +15,11 @@ const { style } = Astro.props;
 	</button>
 
 	<div class="mobile-menu closed | fixed inset-0 w-screen h-screen bg-emerald-900 text-tertiary-50">
-		<div class="container mx-auto px-4 py-3 flex flex-col h-full">
+		<div class="container mx-auto py-3 flex flex-col h-full">
 
-			<div class="flex items-center justify-between">
-				<a aria-label="Inicio" href="/">
-					<div class="bg-neutral-950/30 p-[5px] rounded-full w-12 aspect-square grid place-content-center">
-						<img class="w-full" src={Logo.src} alt="">
-					</div>
+			<div class="flex items-center justify-between border-b px-4 pb-3 border-neutral-950/30">
+				<a class="w-10" aria-label="Inicio" href="/">
+					<img class="w-full" src={Logo.src} alt="">
 				</a>
 
 				<button class="close-menu | ml-auto bg-neutral-950/30 flex items-center gap-2 py-2 px-4 text-tertiary-50  rounded-full">
@@ -31,7 +29,7 @@ const { style } = Astro.props;
 			</div>
 
 
-			<ul class="mt-40 flex flex-col gap-6 text-4xl font-semibold tracking-tight">
+			<ul class="mt-40 flex flex-col gap-6 px-4 text-4xl font-semibold tracking-tight">
 				<li><a class="nav-link | flex items-center gap-4" href="/teoria"><div aria-hidden="true" class="w-3 aspect-square rotate-45 bg-secondary-500"></div> LA TEORÍA</a></li>
 				<li><a class="nav-link | flex items-center gap-4" href="/actores"><div aria-hidden="true" class="w-3 aspect-square rotate-45 bg-secondary-500"></div> LOS ACTORES</a></li>
 				<li><a class="nav-link | flex items-center gap-4" href="/camino"><div aria-hidden="true" class="w-3 aspect-square rotate-45 bg-secondary-500"></div> EL CAMINO</a></li>
